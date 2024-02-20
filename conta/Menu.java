@@ -14,7 +14,7 @@ public class Menu {
         conta.imprimirInfo();
 
         conta.sacar(200.0);
-        
+
         conta.imprimirInfo();
     }
 }
