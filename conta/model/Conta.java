@@ -1,15 +1,37 @@
 package conta.model;
     public abstract class Conta {
-        private String numero;
+        private int numero;
+        private String cliente;
         private double saldo;
 
-        public Conta(String numero, double saldo) {
+        public Conta(int numero, String cliente, double saldo) {
             this.numero = numero;
+            this.cliente = cliente;
             this.saldo = saldo;
         }
 
+        public int getNumero() {
+            return numero;
+        }
 
-        public abstract void depositar(double valor);
-        public abstract void sacar(double valor);
-        public abstract void imprimirInfo();
+        public void setNumero(int numero) {
+            this.numero = numero;
+        }
+
+        public String getCliente() {
+            return cliente;
+        }
+
+        public void setCliente(String cliente) {
+            this.cliente = cliente;
+        }
+
+        public double getSaldo() {
+            return saldo;
+        }
+
+        public void setSaldo(double saldo) {
+            this.saldo = saldo;
+        }
+
     }
