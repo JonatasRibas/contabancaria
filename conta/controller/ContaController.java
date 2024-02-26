@@ -6,10 +6,6 @@ import java.util.List;
 import conta.model.Conta;
 
 public class ContaController {
-
-    private int numero;
-    private String cliente;
-    private double saldo;
     private List<Conta> contas;
 
     public ContaController() {
